@@ -1,0 +1,40 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: Bitter, sans-serif;
+    font-size: 14px;
+    height: 100%;
+}
+
+.doc-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.doc-links__item {
+    border-style: solid;
+    border-color: #61affe;
+    border-radius: 5px;
+    width: 250px;
+    height: 50px;
+    position: relative;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 20px;
+}
+
+.doc-links__item a, a:hover, a:visited {
+    text-decoration: none;
+}
+
+.link-spanner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
