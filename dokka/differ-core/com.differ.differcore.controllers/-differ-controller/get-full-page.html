@@ -1,0 +1,25 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>DifferController.getFullPage - differ-core</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">differ-core</a>&nbsp;/&nbsp;<a href="../index.html">com.differ.differcore.controllers</a>&nbsp;/&nbsp;<a href="index.html">DifferController</a>&nbsp;/&nbsp;<a href="./get-full-page.html">getFullPage</a><br/>
+<br/>
+<h1>getFullPage</h1>
+<a name="com.differ.differcore.controllers.DifferController$getFullPage(org.springframework.ui.Model, kotlin.String, kotlin.String)"></a>
+<code><span class="identifier">@GetMapping</span> <span class="keyword">fun </span><span class="identifier">getFullPage</span><span class="symbol">(</span><span class="identifier" id="com.differ.differcore.controllers.DifferController$getFullPage(org.springframework.ui.Model, kotlin.String, kotlin.String)/model">model</span><span class="symbol">:</span>&nbsp;<span class="identifier">Model</span><span class="symbol">, </span><span class="identifier">@RequestParam</span><span class="symbol">(</span>"left"<span class="symbol">, </span>false<span class="symbol">)</span> <span class="identifier" id="com.differ.differcore.controllers.DifferController$getFullPage(org.springframework.ui.Model, kotlin.String, kotlin.String)/old">old</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier">@RequestParam</span><span class="symbol">(</span>"right"<span class="symbol">, </span>false<span class="symbol">)</span> <span class="identifier" id="com.differ.differcore.controllers.DifferController$getFullPage(org.springframework.ui.Model, kotlin.String, kotlin.String)/new">new</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code>
+<p>Request for a full html page with version differences.</p>
+<p>Params can be null. Then it will search for suitable versions:
+    if old version is null then it will search for penultimate version file;
+    if new version is null then it will search for last version file.</p>
+<h3>Parameters</h3>
+<p><a name="old"></a>
+<code>old</code> - an old version api for comparison;</p>
+<p><a name="new"></a>
+<code>new</code> - a new version api for comparison.</p>
+<p><strong>Return</strong><br/>
+Whole html page with differences in api versions.</p>
+</BODY>
+</HTML>

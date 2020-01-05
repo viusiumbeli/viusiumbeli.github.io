@@ -1,0 +1,66 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>DifferController - differ-core</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">differ-core</a>&nbsp;/&nbsp;<a href="../index.html">com.differ.differcore.controllers</a>&nbsp;/&nbsp;<a href="./index.html">DifferController</a><br/>
+<br/>
+<h1>DifferController</h1>
+<code><span class="identifier">@Controller</span> <span class="identifier">@RequestMapping</span><span class="symbol">(</span>["/v1/differ"]<span class="symbol">)</span> <span class="keyword">class </span><span class="identifier">DifferController</span></code>
+<p>Main controller of the application.</p>
+<p>By default all requests are mapping to the <a href="-d-e-f-a-u-l-t_-u-r-l.html">DEFAULT_URL</a>.</p>
+<p><strong>Author</strong><br/>
+Vladislav Iusiumbeli</p>
+<p><strong>Since</strong><br/>
+1.0.0</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Is used for autowire required beans.</p>
+<code><span class="identifier">DifferController</span><span class="symbol">(</span><span class="identifier" id="com.differ.differcore.controllers.DifferController$<init>(com.differ.differcore.service.DiffService, com.differ.differcore.service.VersionService, com.differ.differcore.render.Renderer, com.differ.differcore.render.Renderer)/diffService">diffService</span><span class="symbol">:</span>&nbsp;<a href="../../com.differ.differcore.service/-diff-service/index.html"><span class="identifier">DiffService</span></a><span class="symbol">, </span><span class="identifier" id="com.differ.differcore.controllers.DifferController$<init>(com.differ.differcore.service.DiffService, com.differ.differcore.service.VersionService, com.differ.differcore.render.Renderer, com.differ.differcore.render.Renderer)/versionService">versionService</span><span class="symbol">:</span>&nbsp;<a href="../../com.differ.differcore.service/-version-service/index.html"><span class="identifier">VersionService</span></a><span class="symbol">, </span><span class="identifier" id="com.differ.differcore.controllers.DifferController$<init>(com.differ.differcore.service.DiffService, com.differ.differcore.service.VersionService, com.differ.differcore.render.Renderer, com.differ.differcore.render.Renderer)/leftRenderer">leftRenderer</span><span class="symbol">:</span>&nbsp;<a href="../../com.differ.differcore.render/-renderer/index.html"><span class="identifier">Renderer</span></a><span class="symbol">, </span><span class="identifier" id="com.differ.differcore.controllers.DifferController$<init>(com.differ.differcore.service.DiffService, com.differ.differcore.service.VersionService, com.differ.differcore.render.Renderer, com.differ.differcore.render.Renderer)/rightRenderer">rightRenderer</span><span class="symbol">:</span>&nbsp;<a href="../../com.differ.differcore.render/-renderer/index.html"><span class="identifier">Renderer</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="get-full-page.html">getFullPage</a></h4>
+</td>
+<td>
+<p>Request for a full html page with version differences.</p>
+<code><span class="keyword">fun </span><span class="identifier">getFullPage</span><span class="symbol">(</span><span class="identifier" id="com.differ.differcore.controllers.DifferController$getFullPage(org.springframework.ui.Model, kotlin.String, kotlin.String)/model">model</span><span class="symbol">:</span>&nbsp;<span class="identifier">Model</span><span class="symbol">, </span><span class="identifier" id="com.differ.differcore.controllers.DifferController$getFullPage(org.springframework.ui.Model, kotlin.String, kotlin.String)/old">old</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.differ.differcore.controllers.DifferController$getFullPage(org.springframework.ui.Model, kotlin.String, kotlin.String)/new">new</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-only-diff.html">getOnlyDiff</a></h4>
+</td>
+<td>
+<p>Request only diff part of the html page.</p>
+<code><span class="keyword">fun </span><span class="identifier">getOnlyDiff</span><span class="symbol">(</span><span class="identifier" id="com.differ.differcore.controllers.DifferController$getOnlyDiff(org.springframework.ui.Model, kotlin.String, kotlin.String)/model">model</span><span class="symbol">:</span>&nbsp;<span class="identifier">Model</span><span class="symbol">, </span><span class="identifier" id="com.differ.differcore.controllers.DifferController$getOnlyDiff(org.springframework.ui.Model, kotlin.String, kotlin.String)/old">old</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.differ.differcore.controllers.DifferController$getOnlyDiff(org.springframework.ui.Model, kotlin.String, kotlin.String)/new">new</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-d-e-f-a-u-l-t_-u-r-l.html">DEFAULT_URL</a></h4>
+</td>
+<td>
+<p>Default url for all requests of this controller.</p>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">DEFAULT_URL</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

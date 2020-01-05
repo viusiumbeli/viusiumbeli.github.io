@@ -1,0 +1,95 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Renderer - differ-core</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">differ-core</a>&nbsp;/&nbsp;<a href="../index.html">com.differ.differcore.render</a>&nbsp;/&nbsp;<a href="./index.html">Renderer</a><br/>
+<br/>
+<h1>Renderer</h1>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">Renderer</span></code>
+<p>Helpful functions for rendering differences.</p>
+<p>This is common functions for each render logic.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Helpful functions for rendering differences.</p>
+<code><span class="identifier">Renderer</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="attribute-value.html">attributeValue</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">attributeValue</span><span class="symbol">(</span><span class="identifier" id="com.differ.differcore.render.Renderer$attributeValue(kotlin.collections.Map((kotlin.Any, )), kotlin.String)/attribute">attribute</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html"><span class="identifier">Map</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">,</span>&nbsp;<span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="com.differ.differcore.render.Renderer$attributeValue(kotlin.collections.Map((kotlin.Any, )), kotlin.String)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="contains-method.html">containsMethod</a></h4>
+</td>
+<td>
+<p>Check if this map contains requested http method.</p>
+<code><span class="keyword">fun </span><span class="identifier">containsMethod</span><span class="symbol">(</span><span class="identifier" id="com.differ.differcore.render.Renderer$containsMethod(kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.String)/map">map</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html"><span class="identifier">Map</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">?</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="com.differ.differcore.render.Renderer$containsMethod(kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.String)/path">path</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.differ.differcore.render.Renderer$containsMethod(kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.String)/method">method</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="contains-parameter.html">containsParameter</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">containsParameter</span><span class="symbol">(</span><span class="identifier" id="com.differ.differcore.render.Renderer$containsParameter(kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.String, kotlin.String, kotlin.Int)/map">map</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html"><span class="identifier">Map</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">?</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="com.differ.differcore.render.Renderer$containsParameter(kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.String, kotlin.String, kotlin.Int)/path">path</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.differ.differcore.render.Renderer$containsParameter(kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.String, kotlin.String, kotlin.Int)/method">method</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.differ.differcore.render.Renderer$containsParameter(kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.String, kotlin.String, kotlin.Int)/parameter">parameter</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.differ.differcore.render.Renderer$containsParameter(kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.String, kotlin.String, kotlin.Int)/parameterIndex">parameterIndex</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-fully-removed-method.html">isFullyRemovedMethod</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">isFullyRemovedMethod</span><span class="symbol">(</span><span class="identifier" id="com.differ.differcore.render.Renderer$isFullyRemovedMethod(kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.String)/left">left</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html"><span class="identifier">Map</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">?</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="com.differ.differcore.render.Renderer$isFullyRemovedMethod(kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.String)/right">right</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html"><span class="identifier">Map</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">?</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="com.differ.differcore.render.Renderer$isFullyRemovedMethod(kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.String)/path">path</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.differ.differcore.render.Renderer$isFullyRemovedMethod(kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.collections.Map((kotlin.String, kotlin.Any)), kotlin.String, kotlin.String)/method">method</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="should-render-method.html">shouldRenderMethod</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">shouldRenderMethod</span><span class="symbol">(</span><span class="identifier" id="com.differ.differcore.render.Renderer$shouldRenderMethod(kotlin.String, freemarker.ext.beans.HashAdapter)/tag">tag</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.differ.differcore.render.Renderer$shouldRenderMethod(kotlin.String, freemarker.ext.beans.HashAdapter)/content">content</span><span class="symbol">:</span>&nbsp;<span class="identifier">HashAdapter</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="version-selected.html">versionSelected</a></h4>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">versionSelected</span><span class="symbol">(</span><span class="identifier" id="com.differ.differcore.render.Renderer$versionSelected(kotlin.collections.List((kotlin.String)), kotlin.String)/versions">versions</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="com.differ.differcore.render.Renderer$versionSelected(kotlin.collections.List((kotlin.String)), kotlin.String)/urlVersion">urlVersion</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="../-left-renderer/index.html">LeftRenderer</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">LeftRenderer</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Renderer</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../-right-renderer/index.html">RightRenderer</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">RightRenderer</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Renderer</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

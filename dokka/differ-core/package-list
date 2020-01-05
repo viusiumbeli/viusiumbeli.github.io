@@ -1,0 +1,15 @@
+$dokka.format:html
+$dokka.linkExtension:html
+$dokka.location:com.differ.differcore.utils$asMutableListOfType(kotlin.collections.MutableList((kotlin.Any)))com.differ.differcore.utils/kotlin.collections.-mutable-list/as-mutable-list-of-type.html
+$dokka.location:com.differ.differcore.utils$asMutableMapOfType(kotlin.collections.MutableMap((kotlin.Any, )))com.differ.differcore.utils/kotlin.collections.-mutable-map/as-mutable-map-of-type.html
+$dokka.location:com.differ.differcore.utils$isInt(kotlin.String)com.differ.differcore.utils/kotlin.-string/is-int.html
+$dokka.location:com.differ.differcore.utils$isNegativeNumber(kotlin.String)com.differ.differcore.utils/kotlin.-string/is-negative-number.html
+$dokka.location:com.differ.differcore.utils$subList(kotlin.collections.List((com.differ.differcore.utils.subList.T)), kotlin.Int)com.differ.differcore.utils/kotlin.collections.-list/sub-list.html
+com.differ.differcore.annotations
+com.differ.differcore.configuration
+com.differ.differcore.controllers
+com.differ.differcore.models
+com.differ.differcore.render
+com.differ.differcore.service
+com.differ.differcore.trash
+com.differ.differcore.utils

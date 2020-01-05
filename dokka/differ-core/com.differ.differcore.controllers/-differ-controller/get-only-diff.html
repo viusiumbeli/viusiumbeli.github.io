@@ -1,0 +1,24 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>DifferController.getOnlyDiff - differ-core</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">differ-core</a>&nbsp;/&nbsp;<a href="../index.html">com.differ.differcore.controllers</a>&nbsp;/&nbsp;<a href="index.html">DifferController</a>&nbsp;/&nbsp;<a href="./get-only-diff.html">getOnlyDiff</a><br/>
+<br/>
+<h1>getOnlyDiff</h1>
+<a name="com.differ.differcore.controllers.DifferController$getOnlyDiff(org.springframework.ui.Model, kotlin.String, kotlin.String)"></a>
+<code><span class="identifier">@GetMapping</span><span class="symbol">(</span>["/version"]<span class="symbol">)</span> <span class="keyword">fun </span><span class="identifier">getOnlyDiff</span><span class="symbol">(</span><span class="identifier" id="com.differ.differcore.controllers.DifferController$getOnlyDiff(org.springframework.ui.Model, kotlin.String, kotlin.String)/model">model</span><span class="symbol">:</span>&nbsp;<span class="identifier">Model</span><span class="symbol">, </span><span class="identifier">@RequestParam</span><span class="symbol">(</span>"left"<span class="symbol">)</span> <span class="identifier" id="com.differ.differcore.controllers.DifferController$getOnlyDiff(org.springframework.ui.Model, kotlin.String, kotlin.String)/old">old</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier">@RequestParam</span><span class="symbol">(</span>"right"<span class="symbol">)</span> <span class="identifier" id="com.differ.differcore.controllers.DifferController$getOnlyDiff(org.springframework.ui.Model, kotlin.String, kotlin.String)/new">new</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code>
+<p>Request only diff part of the html page.</p>
+<p>It useful for ajax requests so as not to reload the page.
+This params can't be null.</p>
+<h3>Parameters</h3>
+<p><a name="old"></a>
+<code>old</code> - an old version api for comparison;</p>
+<p><a name="new"></a>
+<code>new</code> - a new version api for comparison.</p>
+<p><strong>Return</strong><br/>
+Only diff part of the html page.</p>
+</BODY>
+</HTML>

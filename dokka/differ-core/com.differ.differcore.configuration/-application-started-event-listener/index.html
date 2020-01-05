@@ -1,0 +1,46 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ApplicationStartedEventListener - differ-core</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">differ-core</a>&nbsp;/&nbsp;<a href="../index.html">com.differ.differcore.configuration</a>&nbsp;/&nbsp;<a href="./index.html">ApplicationStartedEventListener</a><br/>
+<br/>
+<h1>ApplicationStartedEventListener</h1>
+<code><span class="identifier">@Component</span> <span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">ApplicationStartedEventListener</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ApplicationListener</span><span class="symbol">&lt;</span><span class="identifier">ApplicationStartedEvent</span><span class="symbol">&gt;</span></code>
+<p>Listening 'ApplicationStartedEvent' from spring boot.</p>
+<p>Using <a href="../../com.differ.differcore.service/-save-service/index.html">SaveService</a>, initiates saving the API description to a temporary file.
+The api description is saved for further processing by the gradle plugin.</p>
+<p><strong>Author</strong><br/>
+Vladislav Iusiumbeli</p>
+<p><strong>Since</strong><br/>
+1.0.0</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Is used for autowire required beans: saveService implementation of <a href="../../com.differ.differcore.service/-save-service/index.html">SaveService</a> interface.</p>
+<code><span class="identifier">ApplicationStartedEventListener</span><span class="symbol">(</span><span class="identifier" id="com.differ.differcore.configuration.ApplicationStartedEventListener$<init>(com.differ.differcore.service.SaveService)/saveService">saveService</span><span class="symbol">:</span>&nbsp;<a href="../../com.differ.differcore.service/-save-service/index.html"><span class="identifier">SaveService</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="on-application-event.html">onApplicationEvent</a></h4>
+</td>
+<td>
+<p>Handle an application started event.</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onApplicationEvent</span><span class="symbol">(</span><span class="identifier" id="com.differ.differcore.configuration.ApplicationStartedEventListener$onApplicationEvent(org.springframework.boot.context.event.ApplicationStartedEvent)/event">event</span><span class="symbol">:</span>&nbsp;<span class="identifier">ApplicationStartedEvent</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>
