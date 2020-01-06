@@ -10,5 +10,13 @@
 <h1>flattenMap</h1>
 <a name="com.differ.differcore.service.MapTransformerService$flattenMap(kotlin.collections.Map((kotlin.String, kotlin.Any)))"></a>
 <code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">flattenMap</span><span class="symbol">(</span><span class="identifier" id="com.differ.differcore.service.MapTransformerService$flattenMap(kotlin.collections.Map((kotlin.String, kotlin.Any)))/mapToFlatten">mapToFlatten</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html"><span class="identifier">Map</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html"><span class="identifier">Map</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">?</span><span class="symbol">&gt;</span></code>
+<p>Flatten json data in map format.</p>
+<p>For example if there is such flatten map entry <code>{ 1 : { 2 : 4 } }</code>
+it should return <code>{ 1.2 : 4 }</code>.</p>
+<h3>Parameters</h3>
+<p><a name="mapToFlatten"></a>
+<code>mapToFlatten</code> - expanded json data.</p>
+<p><strong>Return</strong><br/>
+Flattened expanded map.</p>
 </BODY>
 </HTML>

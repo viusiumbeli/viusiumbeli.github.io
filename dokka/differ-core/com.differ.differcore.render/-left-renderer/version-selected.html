@@ -10,5 +10,17 @@
 <h1>versionSelected</h1>
 <a name="com.differ.differcore.render.LeftRenderer$versionSelected(kotlin.collections.List((kotlin.String)), kotlin.String)"></a>
 <code><span class="keyword">fun </span><span class="identifier">versionSelected</span><span class="symbol">(</span><span class="identifier" id="com.differ.differcore.render.LeftRenderer$versionSelected(kotlin.collections.List((kotlin.String)), kotlin.String)/versions">versions</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="com.differ.differcore.render.LeftRenderer$versionSelected(kotlin.collections.List((kotlin.String)), kotlin.String)/urlVersion">urlVersion</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code>
+<p>Look up specified in url version in available versions.</p>
+<p>If requested version is listed in available versions list then it will be returned.
+Else if there is more than two versions then will be returned second version from available list.
+Else if versions is not empty then will be returned first version from available list.
+In the end if all above returned false will be returned null.</p>
+<h3>Parameters</h3>
+<p><a name="versions"></a>
+<code>versions</code> - a list of available versions;</p>
+<p><a name="urlVersion"></a>
+<code>urlVersion</code> - version from url param.</p>
+<p><strong>Return</strong><br/>
+version from available list if there is such version, 'null' otherwise.</p>
 </BODY>
 </HTML>

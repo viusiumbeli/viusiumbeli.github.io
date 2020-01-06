@@ -1,0 +1,8 @@
+com.differ.differcore.annotations
+com.differ.differcore.configuration
+com.differ.differcore.controllers
+com.differ.differcore.models
+com.differ.differcore.render
+com.differ.differcore.service
+com.differ.differcore.trash
+com.differ.differcore.utils

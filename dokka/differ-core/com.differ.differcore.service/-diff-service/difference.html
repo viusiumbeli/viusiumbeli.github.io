@@ -10,5 +10,14 @@
 <h1>difference</h1>
 <a name="com.differ.differcore.service.DiffService$difference(kotlin.String, kotlin.String)"></a>
 <code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">difference</span><span class="symbol">(</span><span class="identifier" id="com.differ.differcore.service.DiffService$difference(kotlin.String, kotlin.String)/penultimate">penultimate</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.differ.differcore.service.DiffService$difference(kotlin.String, kotlin.String)/last">last</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.differ.differcore.models/-either/index.html"><span class="identifier">Either</span></a><span class="symbol">&lt;</span><a href="../../com.differ.differcore.models/-difference/index.html"><span class="identifier">Difference</span></a><span class="symbol">&gt;</span></code>
+<p>Looks for changes in two specified versions.</p>
+<p>Implementations should look up specified version and make comparison.</p>
+<h3>Parameters</h3>
+<p><a name="penultimate"></a>
+<code>penultimate</code> - penultimate version of the API.</p>
+<p><a name="last"></a>
+<code>last</code> - last version of the API.</p>
+<p><strong>Return</strong><br/>
+The result of comparing two versions. If all is fun then will be returned <a href="../../com.differ.differcore.models/-either/-success/index.html">Either.Success</a> else will be returned <a href="../../com.differ.differcore.models/-either/-error/index.html">Either.Error</a> with message or exception.</p>
 </BODY>
 </HTML>

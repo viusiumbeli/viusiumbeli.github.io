@@ -9,6 +9,14 @@
 <br/>
 <h1>DiffServiceImpl</h1>
 <code><span class="identifier">@Service</span> <span class="keyword">class </span><span class="identifier">DiffServiceImpl</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-diff-service/index.html"><span class="identifier">DiffService</span></a></code>
+<p>Implementation of <a href="../-diff-service/index.html">DiffService</a> interface.</p>
+<p>Looking changes between versions with Google Gson library.
+It uses 'com.google.common.collect.Maps.difference' for search.
+Jsons are flattened first for a more accurate search. Jsons expand back after search.</p>
+<p><strong>Author</strong><br/>
+Vladislav Iusiumbeli</p>
+<p><strong>Since</strong><br/>
+1.0.0</p>
 <h3>Constructors</h3>
 <table>
 <tbody>
@@ -17,6 +25,7 @@
 <h4><a href="-init-.html">&lt;init&gt;</a></h4>
 </td>
 <td>
+<p>Is used for autowire required beans.</p>
 <code><span class="identifier">DiffServiceImpl</span><span class="symbol">(</span><span class="identifier" id="com.differ.differcore.service.DiffServiceImpl$<init>(com.fasterxml.jackson.databind.ObjectMapper, com.differ.differcore.service.VersionService, com.differ.differcore.service.MapTransformerService)/objectMapper">objectMapper</span><span class="symbol">:</span>&nbsp;<span class="identifier">ObjectMapper</span><span class="symbol">, </span><span class="identifier" id="com.differ.differcore.service.DiffServiceImpl$<init>(com.fasterxml.jackson.databind.ObjectMapper, com.differ.differcore.service.VersionService, com.differ.differcore.service.MapTransformerService)/versionService">versionService</span><span class="symbol">:</span>&nbsp;<a href="../-version-service/index.html"><span class="identifier">VersionService</span></a><span class="symbol">, </span><span class="identifier" id="com.differ.differcore.service.DiffServiceImpl$<init>(com.fasterxml.jackson.databind.ObjectMapper, com.differ.differcore.service.VersionService, com.differ.differcore.service.MapTransformerService)/mapTransformerService">mapTransformerService</span><span class="symbol">:</span>&nbsp;<a href="../-map-transformer-service/index.html"><span class="identifier">MapTransformerService</span></a><span class="symbol">)</span></code></td>
 </tr>
 </tbody>
@@ -29,6 +38,7 @@
 <h4><a href="difference.html">difference</a></h4>
 </td>
 <td>
+<p>Looks for changes in two specified versions.</p>
 <code><span class="keyword">fun </span><span class="identifier">difference</span><span class="symbol">(</span><span class="identifier" id="com.differ.differcore.service.DiffServiceImpl$difference(kotlin.String, kotlin.String)/penultimate">penultimate</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.differ.differcore.service.DiffServiceImpl$difference(kotlin.String, kotlin.String)/last">last</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.differ.differcore.models/-either/index.html"><span class="identifier">Either</span></a><span class="symbol">&lt;</span><a href="../../com.differ.differcore.models/-difference/index.html"><span class="identifier">Difference</span></a><span class="symbol">&gt;</span></code></td>
 </tr>
 </tbody>
